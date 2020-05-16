@@ -18,3 +18,50 @@ text-rendering: optimizeLegibility;
     /* margin: 0 auto 0 auto;  top right bottom left: */
     margin: 0 auto;
 }
+header {
+    background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 240%;
+}
+
+.btn{
+    font-size: 20px;
+    border: 1px solid #ffa502;
+    border-radius: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+.ghost-btn {
+    color: #ffa502;
+    text-decoration: none;
+}
+
+.outline-btn {
+    text-decoration: none;
+    background-color: #ffa502;
+    color: #fff;
+}

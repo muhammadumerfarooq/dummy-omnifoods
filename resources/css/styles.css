@@ -18,6 +18,10 @@ text-rendering: optimizeLegibility;
     /* margin: 0 auto 0 auto;  top right bottom left: */
     margin: 0 auto;
 }
+
+/*  ******** HEADER ****
+    ********************* */
+
 header {
     background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./img/hero.jpg);
     height: 100vh;
@@ -44,24 +48,137 @@ h1 {
     margin-bottom: 30px;
     font-size: 240%;
 }
+.logo-img {
+    height: auto;
+    width: 100px;
+    margin-top: 15px;
+    float: left;
+}
+.main-nav {
+    margin-top: 40px;
+    float: right;
+    list-style: none;
+}
 
-.btn{
+.main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    padding: 8px 0;
+    border-bottom: 2px solid #ffa502;
+}
+
+.section-long {
+    padding: 80px 0;
+}
+h2 {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2::after{
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 2px;
+    background-color: #ffa502;
+}
+h3 {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 100%;
+    margin:10px auto ;
+}
+.long-text {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+
+}
+.detail-text {
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.icon {
+font-size: 60px;
+color: #ffa502;
+}
+/*inline-block vs inline*/
+/*  
+    padding/margin respected vs not respected
+    height/width respected  vs not respected
+*/
+
+/*inline-block vs block*/
+/*  
+    inline-blocks don't apply line break
+    block apply line break
+*/
+
+
+/***** BUTTONS START *******
+*****************************/
+
+.btn:link,
+.btn:visited{
     font-size: 20px;
     border: 1px solid #ffa502;
     border-radius: 200px;
     text-align: center;
-    display: inline-block;
+    display: inline-block;  
     padding: 10px 30px;
     margin-right: 20px;
+    font-weight: 300;
+    transition: background-color 2.0s, color 0.25s, border 0.25s;
 }
 
-.ghost-btn {
+.ghost-btn:link,
+.ghost-btn:visited {
     color: #ffa502;
     text-decoration: none;
+    
 }
 
-.outline-btn {
+.outline-btn:link,
+.outline-btn:visited {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffa502;
+}
+
+
+.ghost-btn:hover,
+.ghost-btn:active {
+    color: #fff;
     text-decoration: none;
     background-color: #ffa502;
+
+}
+
+.outline-btn:hover,
+.outline-btn:active {
+    text-decoration: none;
+    background-color: #ac6f00;
     color: #fff;
+    border-color: 1px solid #ac6f00;
 }
